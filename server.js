@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({
 // Make public a static dir
 app.use(express.static("public"));
 
-// Database configuration with mongoose
+// Database configuration with mongoose mongolab-triangular-62086
 mongoose.connect("mongodb://localhost/fakeNews");
 var db = mongoose.connection;
 
@@ -47,7 +47,7 @@ db.once("open", function() {
 // Routes
 // ======
 
-// A GET request to scrape the echojs website
+// A GET request to scrape theonion website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with request
   request("http://www.theonion.com/", function(error, response, html) {
