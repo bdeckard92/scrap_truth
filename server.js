@@ -29,8 +29,8 @@ app.use(bodyParser.urlencoded({
 // Make public a static dir
 app.use(express.static("public"));
 
-// Database configuration with mongoose mongolab-triangular-62086
-mongoose.connect("mongodb://localhost/fakeNews");
+// Database configuration with mongoose mongolab-triangular-62086 or mongodb://localhost/fakeNews
+mongoose.connect("mongolab-triangular-62086");
 var db = mongoose.connection;
 
 // Show any mongoose errors
