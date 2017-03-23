@@ -46,6 +46,7 @@ db.once("open", function() {
 
 // Routes
 // ======
+// test
 
 // A GET request to scrape theonion website
 app.get("/scrape", function(req, res) {
